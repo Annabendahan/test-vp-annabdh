@@ -1,0 +1,34 @@
+.el-icon-arrow-up {
+  color: map-get($colors, orange) !important;
+  transform: scale(1.1);
+  font-weight: 900 !important;
+  font-size: 19px !important;
+}
+
+.el-input__inner {
+  border: none !important;
+  border-radius: 0% !important;
+}
+
+.searchbar {
+  display: flex;
+  padding: 0px 5px;
+  width: 240px;
+  margin: 20px auto;
+  align-items: center;
+  img {
+    height: 40px;
+    width: 35px;
+  }
+  @include breakpoint(m) {
+    margin: 50px auto;
+  }
+}
+
+.el-carousel__arrow {
+  background: white !important;
+  top: 30% !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  color: black !important;
+}

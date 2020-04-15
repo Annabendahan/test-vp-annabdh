@@ -1,0 +1,49 @@
+.bottom-offer {
+  text-align: center;
+  font-family: "SevenOneEight-Medium";
+  margin: 50px 0px 0px 0px;
+  @include breakpoint(s) {
+    margin: 100px 0px 0px 0px;
+  }
+}
+
+.promo-code {
+  background: map-get($colors, orange);
+  padding: 30px;
+  color: white;
+  margin: 40px auto;
+  font-family: "SevenOneEight-Book";
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.steps {
+  display: block;
+  margin: auto;
+  width: 80%;
+  @include breakpoint(s) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  &__num {
+    font-size: 80px;
+    font-weight: 900;
+    color: map-get($colors, orange);
+    margin-right: 15px;
+  }
+  &__text {
+    text-align: left;
+    font-size: 14px;
+    @include breakpoint(m) {
+      font-size: 18px;
+    }
+  }
+}

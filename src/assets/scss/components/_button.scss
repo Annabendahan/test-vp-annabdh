@@ -1,0 +1,10 @@
+.button {
+  padding: 10px 70px;
+  margin: 50px;
+
+  &__subscription {
+    background: map-get($colors, orange);
+    color: white;
+    font-family: "SevenOneEight-Medium";
+  }
+}

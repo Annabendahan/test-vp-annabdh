@@ -1,0 +1,67 @@
+.destination-card {
+  border-radius: 5px;
+  margin: 10px 0px;
+  background: white;
+  height: 280px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 20px rgba(189, 188, 188, 0.75);
+  }
+  &__photo {
+    background-size: cover;
+    height: 170px;
+    position: relative;
+    z-index: 9;
+    img {
+      background-size: cover;
+    }
+  }
+  &__price {
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    color: white;
+    font-family: "SevenOneEight-Black";
+    z-index: 99;
+  }
+
+  &__desc {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 1rem;
+    margin: 15px 0px 5px 0px;
+  }
+  &__country {
+    font-weight: 700;
+  }
+  &__place {
+    font-weight: 300;
+  }
+  &__label {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 5px 0px;
+  }
+  &__tags {
+    margin: 15px 0px;
+    font-size: 0.6rem;
+  }
+  &__tag {
+    padding: 3px 5px;
+    color: white;
+  }
+
+  &__premium {
+    background: black;
+    margin-right: 15px;
+  }
+  &__option {
+    background: map-get($colors, gold);
+  }
+}

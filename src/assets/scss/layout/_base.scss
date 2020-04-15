@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "SevenOneEight-Light";
+  src: url("~@/assets/fonts/SevenOneEight-Light.ttf");
+}
+
+@font-face {
+  font-family: "SevenOneEight-Book";
+  src: url("~@/assets/fonts/SevenOneEight-Book.ttf");
+}
+
+@font-face {
+  font-family: "SevenOneEight-Black";
+  src: url("~@/assets/fonts/SevenOneEight-Black.ttf");
+}
+
+@font-face {
+  font-family: "SevenOneEight-Medium";
+  src: url("~@/assets/fonts/SevenOneEight-Medium.ttf");
+}
+
+@font-face {
+  font-family: "SevenOneEight-Extra-Bold";
+
+  src: url("~@/assets/fonts/SevenOneEight-ExtraBold.ttf");
+}
+
+html,
+body {
+  position: relative;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: map-get($colors, grey);
+  background: map-get($colors, lightgrey);
+  padding: 2% 2% 0% 2%;
+  @include breakpoint(s) {
+    padding: 2% 4% 0% 4%;
+  }
+
+  @include breakpoint(m) {
+    padding: 2% 5% 0% 5%;
+  }
+  @include breakpoint(xl) {
+    padding: 2% 6% 0% 6%;
+  }
+
+  &.is-active {
+    overflow: hidden;
+  }
+}
+
+p {
+  line-height: 130%;
+
+  b {
+    font-weight: 700;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px auto 40px;
+  max-width: 640px;
+  font-family: "SevenOneEight-Medium";
+  color: map-get($colors, orange);
+
+  @include breakpoint(m) {
+    font-size: 26px;
+  }
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "SevenOneEight-Light";
+  margin-bottom: 20px;
+  text-align: center;
+  color: map-get($colors, grey);
+
+  @include breakpoint(m) {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "SevenOneEight-Light";
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 900;
+
+  color: map-get($colors, orange);
+  font-family: "SevenOneEight-Black";
+}
+
+h6 {
+  font-family: "SevenOneEight-Light";
+  font-size: 15px;
+}
+
+img {
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+a {
+  color: map-get($colors, text);
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+main {
+  margin-bottom: 200px;
+}

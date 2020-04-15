@@ -1,0 +1,17 @@
+footer {
+  background: map-get($colors, grey);
+  color: white;
+  padding: 15px;
+  z-index: 999;
+  width: 100%;
+  left: 0px;
+  @include breakpoint(l) {
+    width: 78%;
+    left: unset;
+  }
+  position: fixed;
+  bottom: 0px;
+
+  margin: auto;
+  text-align: center;
+}
